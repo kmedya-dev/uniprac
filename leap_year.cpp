@@ -1,4 +1,4 @@
-#include <iostream>
+#include <stdio.h>
 
 // Function to check if a year is a leap year
 bool isLeapYear(int year) {
@@ -21,13 +21,13 @@ bool isLeapYear(int year) {
 
 int main() {
     int year;
-    std::cout << "Enter a year: ";
-    std::cin >> year;
+    printf("Enter a year: ");
+    scanf("%d", &year);
 
     if (isLeapYear(year)) {
-        std::cout << year << " is a leap year." << std::endl;
+        printf("%d is a leap year.\n", year);
     } else {
-        std::cout << year << " is not a leap year." << std::endl;
+        printf("%d is not a leap year.\n", year);
     }
 
     return 0;
